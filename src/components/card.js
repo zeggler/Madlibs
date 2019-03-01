@@ -12,12 +12,12 @@ class Card extends Component {
             pluralNoun: ''
         }
 
-      
+        this.handleInputChange = this.handleInputChange.bind(this);
     }
 
 
-handleInputChange() {
-    this.setState({ color: 'red' })
+handleInputChange(event) {
+    this.setState({ color: event.target.value })
 }
 
 
@@ -28,7 +28,7 @@ handleInputChange() {
         return (
             <div className="card">
                 <h1>{this.state.color}</h1> 
-                <input/>
+                <input onChange={(event) => this.handleInputChange(event)}/>
             </div>
         )
 
