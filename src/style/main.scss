@@ -109,6 +109,7 @@
 
     button {
         justify-self: center;
+        transform: translateY(50%);
     }
 
     &__generate{
@@ -118,8 +119,26 @@
 
     &__clear {
         background-color: #45b0e5;
-        @include button;
-       
+        @include button; 
+    }
+
+    &__content { 
+        width: 1000px;
+        height: 275px;
+        background-color: #f2f2f2;
+
+        justify-self: center;
+        margin-bottom: 84px;
+        
+        
+
+        p {
+            line-height: 29px;
+            padding: 50px 47px;
+            font-family: 'Montserrat';
+            font-size: 16px;
+            font-weight: 300
+        }
     }
 }
 
@@ -176,3 +195,5 @@
         border-radius: 50%;
     }
 }
+
+
