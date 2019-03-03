@@ -87,7 +87,7 @@ handleFormSubmit(event) {
                     })
                 }
                 </div>
-                <button type="submit">{!this.state.contentVisible ? 'Generate Madlib' : 'Clear Form'}</button>
+                <button className={`card__${!this.state.contentVisible ? 'generate' : 'clear' }`}type="submit">{!this.state.contentVisible ? 'Generate Madlib' : 'Clear Form'}</button>
                 {
                     this.state.contentVisible ? <Content data={this.state}/> : ''
                 }
